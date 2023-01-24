@@ -1,205 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Dashboard</title>
-    <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dashboard</title>
+  <script src="https://kit.fontawesome.com/c5d4023dee.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <div class="navbars">
+  <header>
+    <div class="navbars">
 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="">
-                  </a>
-                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button> -->
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="d-flex" role="search">
-                      <input class="search form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                    </form>
-                    <div class="button-list">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.svg" alt="">
+          </a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex search-input" role="search">
+              <input class="search form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                aria-label="Search">
+            </form>
+            <div class="button-list">
 
-                        <div class="btn-group">
-                          <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-list-ul"></i>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
+              <div class="btn-group">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-list-ul"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-circle-question"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group icon-nav-header">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+
+              <div class="btn-group">
+                <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bell fa-solid fa-bell"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <aside class="sidebar text-white py-4">
+      <div>
+        <ul>
+          <li class="list-icons py-3">
+            <a href="#">
+              <i class="list-icon fa-solid fa-house"></i>
+              <span class="sidebar-menu">Home</span>
+            </a>
+          </li>
+          <li class="list-icons py-3">
+            <a href="#">
+              <i class="list-icon fa-solid fa-ranking-star"></i>
+              <span class="sidebar-menu">Stats</span>
+            </a>
+          </li>
+          <li class="list-icons py-3">
+            <a href="#">
+              <i class="list-icon fa-solid fa-signal"></i>
+              <span class="sidebar-menu">Signal</span>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+      <div class="admin">
+        <ul>
+          <li class="list-icons">
+            <i class="list-icon fa-solid fa-gear"></i>
+            <span class="gx-3 sidebar-menu">Admin</span>
+          </li>
+        </ul>
+      </div>
+
+    </aside>
+    <div class="main-content">
+
+      <div class="container-fluid text-white bg-primary py-3 flex-column flex-md-wrap">
+        <div class="row justify-content-between list-boolean">
+          <div class="col-auto">
+            <span class="fs-1">Boolean</span>
+            <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+            <div>
+              <span class="badge rounded-pill text-bg-secondary">3 app</span>
+              <i class="arrow fa-solid fa-angles-right"></i>
+              <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean mobile app</span>
+              <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean web app</span>
+              <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean blog app</span>
+              <span class="plus-icon badge rounded-pill text-bg-secondary">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <p>Studenti online negli ultimi 30 minuti</p>
+            <p class="fs-2 fw-2">125</p>
+          </div>
+
+          <div class="col-auto gap-3 align-items-baseline order-sm-1 d-flex">
+            <p>Nuovo studente</p>
+            <div>
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">
+                <i class="fw-light fa-solid fa-plus"></i>
+              </button>
+              <!-- <button type="button" class="btn btn-outline-light">
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid">
+        <div class="row gy-3">
+          <div class="col-lg-8 col-sm-12">
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <div class="card-header fs-3">
+                    Prossime classi
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                      <li class="list-group-item">A fourth item</li>
+                      <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+
+                  <div class="card">
+                    <div class="card-header fs-3">
+                      F.A.Q.
+                    </div>
+                    <div class="card-body">
+                      <div class="accordion-item">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          Accordion Item #1
+                        </button>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                          aria-labelledby="panelsStayOpen-headingOne">
+                          <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that just about any HTML can go within the <code>.accordion-body</code>, though the
+                            transition
+                            does limit overflow.
+                          </div>
                         </div>
-  
-                        <div class="btn-group">
-                          <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-circle-question"></i>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Accordion Item #2
                           </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingTwo">
+                          <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that just about any HTML can go within the <code>.accordion-body</code>, though the
+                            transition
+                            does limit overflow.
+                          </div>
                         </div>
-  
-                        <div class="btn-group icon-nav-header">
-                          <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
                           </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                          aria-labelledby="panelsStayOpen-headingThree">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes
+                            control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                            can
+                            modify any of this with custom CSS or overriding our default variables. It's also worth
+                            noting
+                            that just about any HTML can go within the <code>.accordion-body</code>, though the
+                            transition
+                            does limit overflow.
+                          </div>
                         </div>
-    
-                        <div class="btn-group">
-                          <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
-                              <i class="bell fa-solid fa-bell"></i>
-                          </button>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Separated link</a></li>
-                          </ul>
-                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <aside class="sidebar text-white py-4">
-            <div>
-                <ul>
-                    <li class="list-icons py-3">
-                        <a href="#">
-                            <i class="list-icon fa-solid fa-house"></i>
-                            <span class="sidebar-menu">Home</span>
-                        </a>
-                    </li>
-                    <li class="list-icons py-3">
-                        <a href="#">
-                            <i class="list-icon fa-solid fa-ranking-star"></i>
-                            <span class="sidebar-menu">Stats</span>
-                        </a>
-                    </li>
-                    <li class="list-icons py-3">
-                        <a href="#">
-                            <i class="list-icon fa-solid fa-signal"></i>
-                            <span class="sidebar-menu">Signal</span>
-                        </a>
-                            
-                    </li>
-                </ul>
+              </div>
             </div>
-            <div class="admin">
-                <ul>
-                    <li class="list-icons">
-                        <i class="list-icon fa-solid fa-gear"></i>
-                        <span class="gx-3 sidebar-menu">Admin</span>
-                    </li>
-                </ul>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="card">
+              <div class="card-body fs-3">
+                Todo
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                  <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                  <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 in classe #75</label>
+                </li>
+                <li class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                  <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                </li>
+              </ul>
             </div>
-            
-        </aside>
-        <div class="main-content">
-
-            <div class="container-fluid text-white bg-primary py-3 flex-column flex-md-wrap">
-                <div class="row justify-content-between list-boolean">
-                    <div class="col-auto">
-                        <span class="fs-1">Boolean</span>
-                        <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
-                        <div>
-                            <span class="badge rounded-pill text-bg-secondary">3 app</span>
-                            <i class="arrow fa-solid fa-angles-right"></i>
-                            <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean mobile app</span>
-                            <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean web app</span>
-                            <span class="badge-icon badge rounded-pill text-bg-secondary">Boolean blog app</span>
-                            <span class="plus-icon badge rounded-pill text-bg-secondary">
-                                <i class="fa-solid fa-plus"></i>
-                            </span>
-
-                        </div>
-                    </div>
-
-                    <div class="col-auto">
-                        <p>Studenti online negli ultimi 30 minuti</p> 
-                        <p class="fs-2 fw-2">125</p>
-                    </div>
-
-                    <div class="col-auto gap-3 align-items-baseline order-sm-1 d-flex">
-                        <p>Nuovo studente</p>
-                        <div>
-                            <button type="button" class="btn btn-outline-light">
-                                <i class="fw-light fa-solid fa-plus"></i>
-                            </button>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-            <div class="container card-mains">
-                <div class="row">
-                    <div class="col-7">
-                        <div class="card">
-                            <div class="card-header fs-3">
-                              Prossime classi
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">An item</li>
-                                    <li class="list-group-item">A second item</li>
-                                    <li class="list-group-item">A third item</li>
-                                    <li class="list-group-item">A fourth item</li>
-                                    <li class="list-group-item">And a fifth one</li>
-                                </ul>                        
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-body fs-3">
-                              Todo
-                            </div>
-        
-                            <ul class="list-group">
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                  <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
-                                </li>
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                  <label class="form-check-label" for="secondCheckbox">Lezione su bootstrap 5 in classe #75</label>
-                                </li>
-                                <li class="list-group-item">
-                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                  <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
-                                </li>
-                              </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
 
         </div>
-    </main>
+      </div>
+
+
+
+    </div>
+
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>
+  </main>
 
 
 
@@ -210,6 +333,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

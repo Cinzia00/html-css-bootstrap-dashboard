@@ -75,13 +75,13 @@ main {
     content: '';
     display: block;
     background-color: rgba(230, 240, 243, 0.544);
-    width: max-content;
+    width: 100px;
 }
 
 /* MAIN-CONTENT */
 
-.card-mains {
-    display: flex;
+.search-input {
+    flex-grow: 1;
 }
 
 
