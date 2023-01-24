@@ -71,7 +71,21 @@ main {
     margin-right: 11px;
 }
 
-@media all and (max-width: 575px) {
+.list-icons:hover  {
+    content: '';
+    display: block;
+    background-color: rgba(230, 240, 243, 0.544);
+    width: max-content;
+}
+
+/* MAIN-CONTENT */
+
+.card-mains {
+    display: flex;
+}
+
+
+@media all and (max-width: 768px) {
     .icon-nav-header {
         /* display: none; */
     }
@@ -96,7 +110,13 @@ main {
         display: block;
         width: 30px;
     }
+
+    .list-boolean {
+        flex-direction: column;
+    }
 }
+
+
 
 
 
