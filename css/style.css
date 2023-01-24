@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.navbars {
+    height: 70px;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    flex-shrink: 0;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+.main-content {
+    height: calc(100vh - 70px);
+}
+
+.search {
+    flex-shrink: 1;
+}
+
+.bell {
+    color: orange;
+}
+
+.button-list {
+    margin-left: auto;
+}
+
+
+
+
