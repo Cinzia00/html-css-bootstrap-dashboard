@@ -8,6 +8,16 @@ img {
     width: 100%;
 }
 
+ul,
+ li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
 .navbars {
     height: 70px;
 }
@@ -17,6 +27,8 @@ main {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     width: 150px;
     flex-shrink: 0;
     background-image: url(../img/sidebar-bg.png);
@@ -25,6 +37,7 @@ main {
 
 .main-content {
     height: calc(100vh - 70px);
+    flex-grow: 1;
 }
 
 .search {
@@ -39,6 +52,38 @@ main {
     margin-left: auto;
 }
 
+.arrow {
+    font-size: 13spx;
+}
+
+/* SIDEBAR */
+
+.admin {
+    margin-top: auto;
+    display: flex;
+}
+
+.list-icon {
+    margin-right: 11px;
+}
+
+@media all and (max-width: 575px) {
+    .icon-nav-header {
+        /* display: none; */
+    }
+
+    .sidebar-menu{
+        display: none;
+    }
+
+    .sidebar {
+        width: 80px;
+    }
+
+    .bell {
+        display: block;
+    }
+}
 
 
 

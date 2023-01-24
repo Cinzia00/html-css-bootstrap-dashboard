@@ -18,9 +18,9 @@
                   <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="">
                   </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                  </button> -->
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="d-flex" role="search">
                       <input class="search form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
@@ -53,7 +53,7 @@
                           </ul>
                         </div>
   
-                        <div class="btn-group">
+                        <div class="btn-group icon-nav-header">
                           <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
                               <i class="fa-solid fa-ellipsis-vertical"></i>
                           </button>
@@ -85,10 +85,71 @@
         </div>
     </header>
     <main>
-        <aside class="sidebar">
+        <aside class="sidebar text-white py-4">
+            <div>
+                <ul>
+                    <li class="py-3">
+                        <a href="#">
+                            <i class="list-icon fa-solid fa-house"></i>
+                            <span class="sidebar-menu">Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="list-icon fa-solid fa-ranking-star"></i>
+                            <span class="sidebar-menu">Stats</span>
+                        </a>
+                    </li>
+                    <li class="py-3">
+                        <a href="#">
+                            <i class="list-icon fa-solid fa-signal"></i>
+                            <span class="sidebar-menu">Signal</span>
+                        </a>
+                            
+                    </li>
+                </ul>
+            </div>
+            <div class="admin">
+                <ul>
+                    <li>
+                        <i class="list-icon fa-solid fa-gear"></i>
+                        <span class="gx-3 sidebar-menu">Admin</span>
+                    </li>
+                </ul>
+            </div>
             
         </aside>
         <div class="main-content">
+
+            <div class="container-fluid text-white bg-primary py-3">
+                <div class="row row-cols-4 justify-content-between">
+                    <div class="col">
+                        <span class="fs-1">Boolean</span>
+                        <span class="badge rounded-pill text-bg-secondary">Piano blaze</span>
+                        <div>
+                            <span class="badge rounded-pill text-bg-secondary">3 app</span>
+                            <i class="arrow fa-solid fa-angles-right"></i>
+                            <span class="badge rounded-pill text-bg-secondary">Boolean mobile app</span>
+                            <span class="badge rounded-pill text-bg-secondary">Boolean web app</span>
+                            <span class="badge rounded-pill text-bg-secondary">Boolean blog app</span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <p>Studenti online negli ultimi 30 minuti</p> 
+                        <p class="fs-2 fw-2">125</p>
+                    </div>
+
+                    <div class="col gap-3 align-items-baseline d-flex">
+                        <p>Nuovo studente</p>
+                        <div>
+                            <button type="button" class="btn btn-outline-light">
+                                <i class="fw-light fa-solid fa-plus"></i>
+                            </button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
 
         </div>
     </main>
