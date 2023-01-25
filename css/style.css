@@ -26,9 +26,7 @@ main {
     display: flex;
     height: calc(100vh - 60px);
     flex-grow: 1;
-    border: 5px solid red;
 }
-
 
 .sidebar {
     display: flex;
@@ -47,6 +45,7 @@ main {
 .main-content {
     height: 100%;
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 .search {
@@ -101,8 +100,7 @@ main {
     width: 40px;
 }
 
-
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   
 
     .sidebar-menu{
@@ -125,11 +123,22 @@ main {
         display: block;
         width: 30px;
     }
+}
+
+@media all and (max-width: 768px) {
 
     .list-boolean {
         flex-direction: column;
     }
+
 }
+
+
+
+button {
+    cursor: pointer;
+}
+
 
 
 
