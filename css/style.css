@@ -30,9 +30,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 150px;
+    height: calc(100vh - 70px);
     flex-shrink: 0;
     background-image: url(../img/sidebar-bg.png);
     background-color: #051E34;
+}
+
+.logo-small {
+    width: 50px;
 }
 
 .main-content {
@@ -80,15 +85,21 @@ main {
 
 /* MAIN-CONTENT */
 
+.main-content {
+    background-color: #F8F9FA;
+}
+
 .search-input {
     flex-grow: 1;
 }
 
+.class-avatar {
+    width: 40px;
+}
+
 
 @media all and (max-width: 768px) {
-    .icon-nav-header {
-        /* display: none; */
-    }
+  
 
     .sidebar-menu{
         display: none;
