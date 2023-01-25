@@ -19,18 +19,22 @@ a {
 }
 
 .navbars {
-    height: 70px;
+    height: 60px;
 }
 
 main {
     display: flex;
+    height: calc(100vh - 60px);
+    flex-grow: 1;
+    border: 5px solid red;
 }
+
 
 .sidebar {
     display: flex;
     flex-direction: column;
     width: 150px;
-    height: calc(100vh - 70px);
+    height: 100%;
     flex-shrink: 0;
     background-image: url(../img/sidebar-bg.png);
     background-color: #051E34;
@@ -41,7 +45,7 @@ main {
 }
 
 .main-content {
-    height: calc(100vh - 70px);
+    height: 100%;
     flex-grow: 1;
 }
 
